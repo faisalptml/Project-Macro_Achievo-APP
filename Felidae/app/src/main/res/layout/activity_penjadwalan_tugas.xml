@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="430dp"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".penjadwalanTugas">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="22dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back"
+            tools:ignore="ContentDescription,MissingConstraints"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="33dp" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="372dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="8dp"
+            android:text="Buat Tugas"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="33dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/iconjudul"
+            app:layout_constraintEnd_toStartOf="@+id/txt_email"
+            app:layout_constraintTop_toBottomOf="@+id/txt1"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="33dp"
+            android:text="Judul Tugas"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/txt1"
+            tools:layout_editor_absoluteX="60dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_email"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_edt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint=" "
+                android:inputType="textEmailAddress"
+                android:lines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/desc_pick"
+            app:layout_constraintEnd_toStartOf="@+id/txt_email"
+            app:layout_constraintTop_toBottomOf="@+id/et_email"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="21dp"
+            android:text="Deskripsi"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/et_email"
+            tools:layout_editor_absoluteX="60dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_desc"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="389dp"
+            android:layout_height="100dp"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_desc"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/desc_edt"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:inputType="textEmailAddress"
+                android:lines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/kesulitan_txt"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/tingkat"
+            app:layout_constraintEnd_toStartOf="@+id/txt_dropdown"
+            app:layout_constraintTop_toBottomOf="@+id/et_desc"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="21dp"
+            android:text="Tingkat Kesulitan"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/et_desc"
+            tools:layout_editor_absoluteX="60dp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/kategori_container"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_dropdown"
+            tools:ignore="MissingConstraints">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdownKesulitan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:labelFor="@+id/dropdown_field"
+                tools:ignore="LabelFor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/kategori_txt"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/kattugas"
+            app:layout_constraintEnd_toStartOf="@+id/txt_dropdown"
+            app:layout_constraintTop_toBottomOf="@+id/kategori_container"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/dropdown_tugas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="21dp"
+            android:text="Kategori"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/kategori_container"
+            tools:layout_editor_absoluteX="60dp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/container_dd"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dropdown_tugas"
+            tools:ignore="MissingConstraints">
+
+            <AutoCompleteTextView
+                android:id="@+id/dropdown_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:labelFor="@+id/dropdown_field"
+                tools:ignore="LabelFor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/image_deadline"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/tanggal"
+            app:layout_constraintEnd_toStartOf="@+id/txt_email"
+            app:layout_constraintTop_toBottomOf="@+id/container_dd"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt_deadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="21dp"
+            android:text="Deadline"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/container_dd"
+            tools:layout_editor_absoluteX="60dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_deadline"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_deadline"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/deadline_edt"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:lines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/image_estimasi"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/estimasi"
+            app:layout_constraintEnd_toStartOf="@+id/txt_email"
+            app:layout_constraintTop_toBottomOf="@+id/et_deadline"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt_estimasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="21dp"
+            android:text="Estimasi Pengerjaan"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/et_deadline"
+            tools:layout_editor_absoluteX="60dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_estimasi"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_estimasi"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/estimasi_edt"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:lines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/image_jumlah"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/banyaknya"
+            app:layout_constraintEnd_toStartOf="@+id/txt_email"
+            app:layout_constraintTop_toBottomOf="@+id/et_estimasi"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt_jumlah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="21dp"
+            android:text="Jumlah Bagian Pengerjaan"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/et_estimasi"
+            tools:layout_editor_absoluteX="60dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_jumlah"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_jumlah"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/jumlah_edt"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:lines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/image_pembagian"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/bagipengerjaan"
+            app:layout_constraintEnd_toStartOf="@+id/txt_email"
+            app:layout_constraintTop_toBottomOf="@+id/et_jumlah"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt_pembagian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="21dp"
+            android:text="Pembagian Pengerjaan"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/et_jumlah"
+            tools:layout_editor_absoluteX="60dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_pembagian"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_pembagian"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pembagian_edt"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:lines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/image_link"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/link"
+            app:layout_constraintEnd_toStartOf="@+id/txt_email"
+            app:layout_constraintTop_toBottomOf="@+id/et_pembagian"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            android:layout_marginTop="21dp"
+            android:text="Pembagian Pengerjaan"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/et_pembagian"
+            tools:layout_editor_absoluteX="60dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_link"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_link"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/link_edt"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:lines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_simpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_color"
+            android:text="Simpan"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_link" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

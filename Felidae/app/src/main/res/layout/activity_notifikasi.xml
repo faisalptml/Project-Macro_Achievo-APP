@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotifikasiActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="393dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="Loh, Kenapa ga langsung dikerjain?"
+            android:textSize="35sp"
+            android:textStyle="normal" />
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="-80dp"
+            android:background="@drawable/baseline_cancel_24" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="110dp"
+            android:background="@color/Gray" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout2"
+        android:layout_width="327dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background_button"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="40dp"
+            android:background="@drawable/epig_2" />
+
+        <TextView
+            android:id="@+id/taskTitle"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-10dp"
+            android:layout_weight="1"
+            android:text="Malas"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/taskCheckbox"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="-11dp"
+            app:buttonTint="#D1AC3A"
+            android:clickable="true"
+            android:focusable="false" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+        android:layout_width="327dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/background_button"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="40dp"
+            android:background="@drawable/epig_1" />
+
+        <TextView
+            android:id="@+id/taskTitle2"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-10dp"
+            android:layout_weight="1"
+            android:text="Masih ngerjain yang lain"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/taskCheckbox2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="-11dp"
+            android:clickable="true"
+            android:focusable="false"
+            app:buttonTint="#D1AC3A" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout5"
+        android:layout_width="327dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background_button"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="40dp"
+            android:background="@drawable/epig_3" />
+
+        <TextView
+            android:id="@+id/taskTitle3"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-10dp"
+            android:layout_weight="1"
+            android:text="Belum Mood"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/taskCheckbox3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="-11dp"
+            app:buttonTint="#D1AC3A"
+            android:clickable="true"
+            android:focusable="false" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout6"
+        android:layout_width="327dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background_button"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="40dp"
+            android:background="@drawable/epig_4"/>
+
+        <TextView
+            android:id="@+id/taskTitle4"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-10dp"
+            android:layout_weight="1"
+            android:text="Belum mengerti tugasnya"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/taskCheckbox4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="-11dp"
+            app:buttonTint="#D1AC3A"
+            android:clickable="true"
+            android:focusable="false" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout7"
+        android:layout_width="327dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background_button"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="40dp"
+            android:background="@drawable/epig_5"/>
+
+        <TextView
+            android:id="@+id/taskTitle5"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-10dp"
+            android:layout_weight="1"
+            android:text="Tidak suka pelajarannya"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/taskCheckbox5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="-11dp"
+            app:buttonTint="#D1AC3A"
+            android:clickable="true"
+            android:focusable="false" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout8"
+        android:layout_width="327dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background_button"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="40dp"
+            android:background="@drawable/epig_6"/>
+
+        <TextView
+            android:id="@+id/taskTitle6"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-10dp"
+            android:layout_weight="1"
+            android:text="Lainnya"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/taskCheckbox6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="-11dp"
+            app:buttonTint="#D1AC3A"
+            android:clickable="true"
+            android:focusable="false" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/selanjutnya_btn"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/all_background"
+        android:scaleType="fitCenter"
+        android:text="Selanjutnya"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

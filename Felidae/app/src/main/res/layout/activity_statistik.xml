@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--on below line we are creating a swipe to refresh layout-->
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--Ui component for our bar chart-->
+
+    <ImageButton
+        android:id="@+id/imageButtonBck"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:background="@color/White"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="33dp"
+        android:src="@drawable/back"
+        tools:ignore="ContentDescription,MissingConstraints,RtlSymmetry"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="184dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="171dp"
+        android:paddingStart="16dp"
+        android:text="Statistik Kinerja"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/idTVHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="September"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/idBarChart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/idTVHead"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="447dp" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="367dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="240dp"
+        android:background="@drawable/background_button">
+
+
+        <TextView
+            android:layout_width="69dp"
+            android:layout_height="68dp"
+            android:text="19"
+            android:textStyle="bold"
+            android:textSize="55sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="70sp" />
+
+
+        <ImageView
+            android:layout_width="71dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/baseline_done_24" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/selesai_btn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/button_color"
+            android:scaleType="fitCenter"
+            android:text="Selesai"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="197dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="582dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/background_button">
+
+        <TextView
+            android:layout_width="69dp"
+            android:layout_height="68dp"
+            android:text="15"
+            android:textStyle="bold"
+            android:textSize="55sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="70sp" />
+
+        <ImageView
+            android:layout_width="71dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/baseline_access_time_24" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/dikerjakan_btn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/button_color"
+            android:scaleType="fitCenter"
+            android:text="Dikerjakan"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="201dp"
+        android:layout_marginTop="367dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="240dp"
+        android:background="@drawable/background_button">
+
+        <TextView
+            android:layout_width="69dp"
+            android:layout_height="68dp"
+            android:text="17"
+            android:textStyle="bold"
+            android:textSize="55sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="66sp" />
+
+        <ImageView
+            android:layout_width="71dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/baseline_clear_24" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/terlambat_btn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/button_color"
+            android:scaleType="fitCenter"
+            android:text="Terlambat"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="196dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="203dp"
+        android:layout_marginTop="583dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/background_button">
+
+        <TextView
+            android:layout_width="69dp"
+            android:layout_height="68dp"
+            android:text="22"
+            android:textStyle="bold"
+            android:textSize="55sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="70sp" />
+
+        <ImageView
+            android:layout_width="71dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/baseline_format_list_bulleted_24" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/antrian_btn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="110dp"
+            android:background="@drawable/button_color"
+            android:scaleType="fitCenter"
+            android:text="Dalam Antrian"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MotivasiActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="393dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="Yuk, Coba pahami deskripsi tugasmu!"
+            android:textSize="35sp"
+            android:textStyle="normal" />
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="-80dp"
+            android:background="@drawable/baseline_cancel_24" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="110dp"
+            android:background="@color/Gray" />
+        
+        <TextView
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="PPT Pit Stop Kedua APP Achievo"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp" />
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="288dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="224dp"
+        android:background="@drawable/dskrp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/sgt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <TextView
+        android:layout_width="347dp"
+        android:layout_height="25sp"
+        android:layout_marginTop="380dp"
+        android:text="Baca artikel terkait"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="347dp"
+        android:layout_height="20sp"
+        android:layout_marginTop="400dp"
+        android:text="untuk membantu tugasmu ..."
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="440dp"
+        android:background="@drawable/copywrite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/copywrite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/copywrite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="600dp"
+        android:background="@drawable/copywrite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/SmoothYellow"
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jadwal Aktivitas dan Tugas"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kamu bulan ini . . ."
+        android:textSize="22dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="402dp"
+        android:layout_height="360dp"
+        android:src="@drawable/calender"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3 Aktivitas dan Tugas"
+        android:layout_marginStart="16dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="yang harus pertama kali kamu kerjak. . ."
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="434dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        tools:ignore="MissingConstraints,UselessLeaf"
+        tools:layout_editor_absoluteX="-2dp">
+
+        <ImageView
+            android:layout_width="141dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/bg002"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="141dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="138dp"
+            android:src="@drawable/bg002"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="141dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="272dp"
+            android:src="@drawable/bg002"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/book"
+            android:layout_width="97dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="25dp"
+            android:src="@drawable/book"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="92dp"
+            android:layout_height="98dp"
+            android:layout_marginStart="162dp"
+            android:src="@drawable/ppt"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="295dp"
+            android:src="@drawable/guitar"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="105dp"
+            android:text="Review Jurnal Orange . ."
+            android:textColor="@color/White"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="105dp"
+            android:text="PPT PitStop Ke-2 APP ."
+            android:textColor="@color/White"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="292dp"
+            android:layout_marginTop="105dp"
+            android:text="Belajar Gitar Lagu Rew. ."
+            android:textColor="@color/White"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="305dp"
+            android:layout_marginTop="125dp"
+            android:text="Minggu, 08 Oktober 2023"
+            android:textColor="@color/White"
+            android:textSize="8sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="162dp"
+            android:layout_marginTop="125dp"
+            android:text="Jum'at, 06 Oktober 2023"
+            android:textColor="@color/White"
+            android:textSize="8sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="125dp"
+            android:text="Senin, 02 Oktober 2023"
+            android:textColor="@color/White"
+            android:textSize="8sp" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/tgasbutton" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/tgasbutton" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="292dp"
+            android:layout_marginTop="130dp"
+            android:src="@drawable/tgasbutton" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aktivitas dan tugas lainnya"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout1"
+        tools:ignore="MissingConstraints"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:id="@+id/txtlain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="yang harus kamu kerjakan ..."
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        tools:ignore="MissingConstraints"
+        android:layout_marginStart="15dp"/>
+
+    <FrameLayout
+        android:layout_width="432dp"
+        android:layout_height="354dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/txtlain"
+        tools:ignore="MissingConstraints,UselessLeaf"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/book2"
+            android:layout_width="97dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/book"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="97dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/ppt"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="97dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="240dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/guitar"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="106dp"
+            android:src="@drawable/line"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="224dp"
+            android:src="@drawable/line"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="350dp"
+            android:src="@drawable/line"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review Jurnal Orange. ."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="110dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PPT PitStop Ke-2 APP . ."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="127dp"
+            android:layout_marginStart="110dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belajar Gitar Lagu Rewri . ."
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="245dp"
+            android:layout_marginStart="110dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deadline: Senin, 02 Oktober 2023 |"
+            android:textSize="13sp"
+            android:layout_marginTop="75dp"
+            android:layout_marginStart="110dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 Hari 3 Jam"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:layout_marginTop="75dp"
+            android:layout_marginStart="320dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deadline: Jum'at, 06 Oktober 2023 |"
+            android:textSize="13sp"
+            android:layout_marginTop="192dp"
+            android:layout_marginStart="110dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 Hari 7 Jam"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:layout_marginTop="192dp"
+            android:layout_marginStart="323dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deadline: Minggu, 08 Oktober 2023 |"
+            android:textSize="13sp"
+            android:layout_marginTop="314dp"
+            android:layout_marginStart="110dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7 Hari 7 Jam"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:layout_marginTop="314dp"
+            android:layout_marginStart="328dp"/>
+
+        <ImageView
+            android:layout_width="197dp"
+            android:layout_height="37dp"
+            android:src="@drawable/tugas1"
+            android:layout_marginTop="43dp"
+            android:layout_marginStart="105dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="197dp"
+            android:layout_height="37dp"
+            android:src="@drawable/tugas2"
+            android:layout_marginTop="157dp"
+            android:layout_marginStart="100dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="197dp"
+            android:layout_height="37dp"
+            android:src="@drawable/tugas3"
+            android:layout_marginTop="280dp"
+            android:layout_marginStart="90dp"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="-25dp"
+            android:src="@drawable/persentase"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="93dp"
+            android:src="@drawable/persenytasenol"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="210dp"
+            android:src="@drawable/persenytasenol"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/NavYellow"
+                app:menu="@menu/bottom_nav_menu" />
+
+        </LinearLayout>
+
+        <!--on below line we are creating a
+            vertical linear layout for our fabs.-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="178dp"
+            android:layout_marginRight="187dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+
+            tools:ignore="UselessParent">
+
+            <!--on below line we are creating a add fab-->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/idFABHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/SmoothBlack"
+                android:contentDescription="@string/app_name"
+                android:padding="4dp"
+                android:src="@drawable/aktivitas"
+                android:visibility="gone"
+                app:backgroundTint="@color/SmoothBlack"
+                app:tint="@color/White" />
+
+            <!--on below line we are creating a home fab
+             and setting its visibility to gone-->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/idFABSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/SmoothBlack"
+                android:contentDescription="@string/app_name"
+                android:padding="4dp"
+                android:visibility="gone"
+                android:src="@drawable/tugas"
+                app:backgroundTint="@color/SmoothBlack"
+                app:tint="@color/White" />
+
+            <!--on below line we are creating a settings fab
+            and setting its visibility to gone-->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/idFABAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+
+                android:layout_marginBottom="20dp"
+                android:background="@color/SmoothBlack"
+                android:contentDescription="@string/app_name"
+                android:padding="4dp"
+                android:src="@drawable/add"
+                app:backgroundTint="@color/SmoothBlack"
+                app:tint="@color/White" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

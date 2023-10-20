@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ANOP</string>
+    <string name="password" />
+    <string name="email" />
+    <string name="username" />
+    <string name="required">required</string>
+    <string name="Email">Email</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="KonfirmasiPassword">Konfirmasi Password</string>
+    <string name="Daftar">Daftar</string>
+</resources>

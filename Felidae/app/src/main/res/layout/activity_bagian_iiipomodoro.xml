@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BagianIIIPomodoroActivity">
+
+    <!-- heading !-->
+    <TextView
+        android:id="@+id/tv_bagian"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle_bagian_pomodoro"
+        android:elevation="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="6dp"
+        android:text="Bagian III"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25"
+        android:textColor="#000000"
+        android:textSize="90dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bagian" />
+
+    <TextView
+        android:id="@+id/tv_menit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" menit"
+        android:textColor="#000000"
+        android:textSize="70dp"
+        android:textStyle="normal"
+        tools:ignore="MissingConstraints"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bagian"/>
+
+    <!-- tugas 1 !-->
+
+    <TextView
+        android:id="@+id/tv_tanpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tanpa distraksi apapun untuk"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.348"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_waktu"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_tugasSatu"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_tugas_pomodoro"
+        android:elevation="20dp"
+        android:paddingStart="65dp"
+        android:paddingTop="14dp"
+        android:text="Review halaman 20-30"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tanpa" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:elevation="20dp"
+        android:src="@drawable/rectangle_check_pomodoro"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.880"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tanpa"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:elevation="20dp"
+        android:src="@drawable/tambahan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tanpa"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_vertical"
+        android:elevation="20dp"
+        android:src="@drawable/nomor1"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tanpa" />
+
+    <TextView
+        android:id="@+id/tv_tugasDua"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_tugas_pomodoro"
+        android:elevation="20dp"
+        android:paddingStart="65dp"
+        android:paddingTop="14dp"
+        android:text="Cek kerapihan tugas"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tugasSatu" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:elevation="20dp"
+        android:src="@drawable/rectangle_check_pomodoro"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.880"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tugasSatu"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:elevation="20dp"
+        android:src="@drawable/tambahan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tugasSatu"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_vertical"
+        android:elevation="20dp"
+        android:src="@drawable/nomor2"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tugasSatu" />
+
+    <TextView
+        android:id="@+id/tv_tugasTIga"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_tugas_pomodoro"
+        android:elevation="20dp"
+        android:paddingStart="65dp"
+        android:paddingTop="14dp"
+        android:text="Cek kelengkapan tugas"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tugasDua" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:elevation="20dp"
+        android:src="@drawable/tambahan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tugasDua"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_vertical"
+        android:elevation="20dp"
+        android:src="@drawable/nomor3"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tugasDua" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:elevation="20dp"
+        android:src="@drawable/rectangle_check_pomodoro"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.880"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tugasDua"/>
+
+    <!-- button !-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_button_cancel"
+        android:elevation="20dp"
+        android:text="Batal"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tugasTIga"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="565dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.150"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_button_start"
+        android:elevation="20dp"
+        android:text="Mulai"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tugasTIga"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.850"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

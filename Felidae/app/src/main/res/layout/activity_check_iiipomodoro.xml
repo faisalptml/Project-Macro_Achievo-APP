@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckIIIPomodoroActivity">
+
+    <!-- heading !-->
+    <TextView
+        android:id="@+id/tv_bagianFinish"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rectangle_bagian_pomodoro"
+        android:elevation="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="6dp"
+        android:text="Bagian III - Telah Selesai"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.150"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_cek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yuk, Cek Progres"
+        android:textColor="#000000"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.400"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bagianFinish" />
+
+    <TextView
+        android:id="@+id/tv_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tandai bagian tugasmu yang terselesaikan"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cek"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_cekTugasSatu"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_tugas_pomodoro"
+        android:elevation="20dp"
+        android:paddingStart="65dp"
+        android:paddingTop="14dp"
+        android:text="Review halaman 20-30"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mark" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:elevation="20dp"
+        android:src="@drawable/rectangle_check_pomodoro_fill"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.880"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mark"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:elevation="20dp"
+        android:src="@drawable/tambahan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mark"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_vertical"
+        android:elevation="20dp"
+        android:src="@drawable/nomor1"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mark" />
+
+    <TextView
+        android:id="@+id/tv_cekTugasDua"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_tugas_pomodoro"
+        android:elevation="20dp"
+        android:paddingStart="65dp"
+        android:paddingTop="14dp"
+        android:text="Cek kerapihan tugas"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cekTugasSatu" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:elevation="20dp"
+        android:src="@drawable/rectangle_check_pomodoro_fill"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.880"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cekTugasSatu"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:elevation="20dp"
+        android:src="@drawable/tambahan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cekTugasSatu"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_vertical"
+        android:elevation="20dp"
+        android:src="@drawable/nomor2"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cekTugasSatu"/>
+
+    <TextView
+        android:id="@+id/tv_cekTugasTiga"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_tugas_pomodoro"
+        android:elevation="20dp"
+        android:paddingStart="65dp"
+        android:paddingTop="14dp"
+        android:text="Cek kelengkapan tugas"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cekTugasDua" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:elevation="20dp"
+        android:src="@drawable/tambahan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cekTugasDua"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_vertical"
+        android:elevation="20dp"
+        android:src="@drawable/nomor3"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cekTugasDua"  />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:elevation="20dp"
+        android:src="@drawable/rectangle_check_pomodoro_fill"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.880"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cekTugasDua"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_sad"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectangle_tugas_pomodoro"
+        android:elevation="20dp"
+        android:paddingStart="65dp"
+        android:paddingTop="14dp"
+        android:text="Belum ada yang selesai"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cekTugasTiga" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="16dp"
+        android:elevation="20dp"
+        android:src="@drawable/tambahan2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cekTugasTiga"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center_vertical"
+        android:elevation="20dp"
+        android:src="@drawable/sad"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cekTugasTiga" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:elevation="20dp"
+        android:src="@drawable/rectangle_check_pomodoro"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.880"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cekTugasTiga"/>
+
+    <!-- button !-->
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D1AC3A"
+        android:elevation="20dp"
+        android:text="Selanjutnya"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sad"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.850"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

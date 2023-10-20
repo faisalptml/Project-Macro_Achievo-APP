@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="430dp"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailTugas">
+
+        <ImageView
+        android:id="@+id/imageButtonBck"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        tools:layout_editor_absoluteY="30dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/back"
+        tools:ignore="ContentDescription,MissingConstraints,RtlSymmetry" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="80dp"
+            android:layout_height="41dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/likeshare"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="ContentDescription,MissingConstraints,RtlSymmetry"
+            tools:layout_editor_absoluteY="27dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="20dp"
+            android:text="Review Jurnal Orange Data M. . ."
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="120dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/tingkat"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="20dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Senin, 02 Oktober 2023"
+            app:layout_constraintTop_toBottomOf="@+id/textView5"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="151dp" />
+
+        <ImageView
+            android:id="@+id/pict1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/timer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="150dp"
+            tools:ignore="ContentDescription,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 Hari 3 Jam"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pict1" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estimasi pengerjaan tugas:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.311"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTime" />
+
+        <TextView
+            android:id="@+id/txtEstimasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 Jam 15 Menit"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.085"
+            app:layout_constraintStart_toEndOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/txtTime" />
+
+
+        <TextView
+            android:id="@+id/txtDescTugas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="22dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="33dp"
+            android:background="@color/Black"
+            android:paddingStart="16dp"
+            android:text="Deskripsi Tugas"
+            android:textColor="@color/White"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/txtEstimasi"
+            tools:layout_editor_absoluteX="60dp" />
+
+        <FrameLayout
+            android:layout_width="386dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintTop_toBottomOf="@id/txtDescTugas"
+            tools:ignore="MissingConstraints,UselessLeaf"
+            tools:layout_editor_absoluteX="23dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:text="Tugas dari pak imam matkul big data. Harus sesuai sama ketentuan yang udah ada di elena. Maksimal review 3 halaman. Ga boleh co-pas, harus di parafrase hehe."
+                android:layout_marginTop="5dp"/>
+
+        </FrameLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_DescTugas"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginHorizontal="22dp"
+            android:layout_marginTop="-8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescTugas"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/descT_edt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:lines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/estimasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="22dp"
+            android:background="@color/Black"
+            android:paddingStart="16dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:text="Masih 100% lagi yang harus kamu kerjakan"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/et_DescTugas"
+            tools:layout_editor_absoluteX="60dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_Estimas"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginHorizontal="22dp"
+            android:layout_marginTop="-8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/estimasi"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/estimasiEdt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:lines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txtDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="22dp"
+            android:background="@color/Black"
+            android:paddingStart="16dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:text="Sudah 75% yang kamu kerjakan"
+            android:textColor="@color/White"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/et_Estimas"
+            tools:layout_editor_absoluteX="60dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_Done"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:layout_marginHorizontal="22dp"
+            android:layout_marginTop="-8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDone"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/doneEdt"
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:paddingStart="32dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/kerjakanTugas_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_goneMarginBottom="15dp"
+            android:background="@drawable/button_color_3"
+            android:text="Kerjakan Tugas"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/et_Done" />
+
+        <FrameLayout
+            android:layout_width="386dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintTop_toBottomOf="@id/estimasi"
+            tools:ignore="MissingConstraints,UselessLeaf"
+            tools:layout_editor_absoluteX="23dp">
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Review halaman 21-30"
+                android:layout_marginTop="-5dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cek kerapihan file"
+                android:layout_marginTop="15dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Cek kelengkapan ketentuan"
+                android:layout_marginTop="38dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="386dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="20dp"
+            app:layout_constraintTop_toBottomOf="@id/txtDone"
+            tools:ignore="MissingConstraints,UselessLeaf"
+            tools:layout_editor_absoluteX="23dp">
+
+            <CheckBox
+                android:id="@+id/checkBox8"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Membuat halaman cover laporan"
+                android:layout_marginTop="-5dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Review halaman 1-10"
+                android:layout_marginTop="15dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBox10"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Review halaman 11-20"
+                android:layout_marginTop="38dp"/>
+
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

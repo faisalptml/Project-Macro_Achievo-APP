@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotifikasiActivity2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <TextView
+            android:layout_width="347dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="25dp"
+            android:text="Notifikasi"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/Gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginHorizontal="32dp"
+            android:background="@color/Gray" />
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="280dp"
+            android:layout_marginHorizontal="32dp"
+        android:background="@color/Gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="195dp"
+            android:layout_marginHorizontal="32dp"
+            android:background="@color/Gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baru"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="-500dp"
+            android:layout_marginStart="35dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="260dp"
+            android:text="Hari Ini"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Kemarin"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="175dp"
+            android:layout_marginStart="35dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout9"
+        android:layout_width="327dp"
+        android:layout_height="85dp"
+        android:background="@drawable/background_button"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="40dp"
+            android:background="@drawable/gm2" />
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/mythic2" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/notifikasi_btn7"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="-85dp"
+            android:layout_marginTop="-15dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_button"
+            android:text="PPT Pit Stop Kedua.."
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp">
+
+            <FrameLayout
+                android:id="@+id/progressBar2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/prn1" />
+
+
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout10"
+        android:layout_width="327dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/background_button"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="40dp"
+            android:background="@drawable/gm1" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/mythic1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/notifikasi_btn8"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="-85dp"
+            android:layout_marginTop="-15dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_button"
+            android:text="Review Jurnal Orange.."
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp">
+
+            <FrameLayout
+                android:id="@+id/progressBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/prn2" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout11"
+        android:layout_width="327dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/background_button"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12">
+
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="40dp"
+            android:background="@drawable/gm3" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/mythic3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/notifikasi_btn9"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="-85dp"
+            android:layout_marginTop="-15dp"
+            android:layout_weight="1"
+            android:text="Belajar Gitar Lagu, Re.."
+            android:background="@drawable/background_button"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp">
+
+            <FrameLayout
+                android:id="@+id/progressBar6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/prn1" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout12"
+        android:layout_width="327dp"
+        android:layout_height="85dp"
+        android:background="@drawable/background_button"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout13">
+
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="40dp"
+            android:background="@drawable/gm2" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/mythic2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/notifikasi_btn10"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="-85dp"
+            android:layout_marginTop="-15dp"
+            android:layout_weight="1"
+            android:text="PPT Pit Stop kedua APP.."
+            android:background="@drawable/background_button"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp">
+
+            <FrameLayout
+                android:id="@+id/progressBar5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/prn1" />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout13"
+        android:layout_width="327dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/background_button"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout15">
+
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="40dp"
+            android:background="@drawable/gm1" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/mythic1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/notifikasi_btn12"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="-85dp"
+            android:layout_marginTop="-15dp"
+            android:layout_weight="1"
+            android:text="Review Jurnal Orange.."
+            android:background="@drawable/background_button"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp">
+
+            <ImageView
+                android:id="@+id/FrameLayout4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/prn2" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+
+<!--        android:id="@+id/linearLayout14"-->
+<!--        android:layout_width="327dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:background="@drawable/background_button"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:padding="16dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout11">-->
+
+
+<!--        <ImageView-->
+<!--            android:layout_width="39dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:background="@drawable/gm1" />-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="80dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_marginStart="15dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:background="@drawable/mythic1" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/taskTitle13"-->
+<!--            android:layout_width="280dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_marginStart="-85dp"-->
+<!--            android:layout_marginTop="-5dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Review Jurnal Orange.."-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="0dp">-->
+
+<!--            <ProgressBar-->
+<!--                android:id="@+id/progressBar7"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:max="100"-->
+<!--                android:progress="65" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:text="50%"-->
+<!--                android:textColor="@color/Black"-->
+<!--                android:textSize="10sp"-->
+<!--                android:textStyle="bold" />-->
+<!--        </RelativeLayout>-->
+
+
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout15"
+        android:layout_width="327dp"
+        android:layout_height="85dp"
+        android:background="@drawable/background_button"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+
+
+        <ImageView
+            android:layout_width="39dp"
+            android:layout_height="40dp"
+            android:background="@drawable/gm3" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/mythic3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/notifikasi_btn14"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="-85dp"
+            android:layout_marginTop="-15dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_button"
+            android:text="Belajar Gitar Lagu, Re.."
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp">
+
+            <FrameLayout
+                android:id="@+id/progressBar3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/prn1" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

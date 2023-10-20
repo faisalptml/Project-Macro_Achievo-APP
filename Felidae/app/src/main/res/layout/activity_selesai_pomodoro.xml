@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1AC3A"
+    tools:context=".SelesaiPomodoroActivity">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="315dp"
+        android:layout_height="367dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/apresiasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jangan lupa dikumpulkan segera \nya, Mila!"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_goodjob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kerja Bagus!"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/tv_tambahanWaktu"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_kerjabagus"
+        android:paddingTop="5dp"
+        android:text="Tambahan \nWaktu"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="440dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_waktuTambahan"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="484dp"
+        android:background="@drawable/rectangle_selesai_25menit"
+        android:gravity="center"
+        android:text="00:23:00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_estimasiAwal"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_kerjabagus"
+        android:paddingTop="5dp"
+        android:text="Estimasi \nAwal"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="440dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_waktuEstimasi"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="484dp"
+        android:background="@drawable/rectangle_selesai_25menit"
+        android:gravity="center"
+        android:text="01:40:00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.110"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_durasi"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_kerjabagus"
+        android:paddingTop="5dp"
+        android:text="Durasi \nPengerjaan"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="440dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"  />
+
+    <TextView
+        android:id="@+id/tv_waktuDurasi"
+        android:layout_width="100dp"
+        android:layout_height="46dp"
+        android:background="@drawable/rectangle_selesai_25menit"
+        android:gravity="center"
+        android:text="02:03:00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="484dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_reminder"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_color"
+        android:elevation="20dp"
+        android:text="Kumpulkan Tugas"
+        android:textAllCaps="false"
+        android:textColor="@color/White"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="550dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_share20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_reminder"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rectangle_selesai_25menit"
+        android:elevation="20dp"
+        android:text="Bagikan"
+        android:textAllCaps="false"
+        android:textColor="@color/Black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="605dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
